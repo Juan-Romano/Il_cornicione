@@ -3,6 +3,7 @@
 
 <head>
   <title> Il Cornucione | Galeria </title>
+  <!-- Metadatos y estilos -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 
@@ -14,33 +15,18 @@
 
   <link rel="icon" href="Imagenes/logo1.png" type="image/png">
 
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-    .carousel-inner img {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
   <link rel="stylesheet" href="estilo/estilo.css" />
-
-
 
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Noto+Sans:ital,wght@0,700;1,700&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 
 <body>
   <h1 id="titulo"> Galeria </h1>
-
-
-  </ul>
+  <!-- Barra de navegacion -->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top text-ali">
     <a id="titulo2" class="navbar-brand" href="index.html">Il Cornicione</a>
 
@@ -62,73 +48,65 @@
       </li>
     </ul>
   </nav>
-
-  <h2> Nuestras fotos </h2>
-  <p class="parrafo__base--amplio"> En <em>Il Cornicione</em> ademas de hacer lo que hacemos tambien somos aficionados
-    por la
-    fotografia y ademas de producir nuestras propios fotos tambien exploramos otros horizontes para obtener tomas dignas
-    de ser vistas
+  <!-- Parrafo -->
+  <h2 class="subtitulos" style="text-align: center;"> Nuestras fotos </h2>
+  <p class="parrafo__base--amplio"> <b>En <em>Il Cornicione</em> ademas de hacer lo que hacemos tambien somos
+      aficionados
+      por la
+      fotografia y ademas de producir nuestras propios fotos tambien exploramos otros horizontes para obtener tomas
+      dignas
+      de ser vistas </b>
   </p>
+  <!-- Imagenes -->
+  <div class="banner">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagenes/gal1.jpeg" alt="gal1" width="1500" height="900">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/gal2.jpg" alt="gal2" width="1500" height="900">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/gal3.jpg" alt="gal3" width="1500" height="900">
+        </div>
+      </div>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="Imagenes/gal1.jpeg" alt="gal1" width="1100" height="500">
-      </div>
-      <div class="carousel-item">
-        <img src="Imagenes/gal2.jpg" alt="gal2" width="1100" height="500">
-      </div>
-      <div class="carousel-item">
-        <img src="Imagenes/gal3.jpg" alt="gal3" width="1100" height="500">
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
-  
-
-
-  <div class="row" style="margin-top: 2cm;">
-    <div class="col-md-4 ">
-      <div class="col-md-12">
-        <img src="Imagenes/gal4.jpeg" alt="gal4" width="500" height="600">
-      </div>
-    </div>
-    <div class="col-md-4  ">
-      <div class="col-md-12">
-        <img src="Imagenes/gal5.jpg" alt="gal5  " width="500" height="600">
-      </div>
-    </div>
-    <div class="col-md-4  ">
-      <div class="col-md-12">
-        <img src="Imagenes/gal6.jpeg" alt="gal6" width="500" height="600">
-      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
   </div>
+
+  <div class="banner" style="margin-top: 2cm; justify-content: space-between; padding-left: 1cm; padding-right: 1cm;">
+
+    <img src="Imagenes/gal4.jpeg" alt="gal4" width="500" height="600">
+
+    <img src="Imagenes/gal5.jpg" alt="gal5  " width="500" height="600">
+
+    <img src="Imagenes/gal6.jpeg" alt="gal6" width="500" height="600">
   </div>
-
-
-
-
-
-
+  <!-- Pie de pagina -->
   <footer>
-    <p><b>Villa Ballester - Buenos Aires - Argentina <br />
-        Tel: +54 9 11 6122-1536 <br />
-        @ilcornicione.pizza<br /> <br />
-        <em>Copyrighy © 2020 - Il Cornicione</em></b> </p>
+    <b>
+      <div> Ballester - Buenos Aires - Argentina</div>
+      <div>Tel: +54 9 11 6122-1536 </div>
+      <div>@ilcornicione.pizza</div>
+      <div><em>Copyrighy © 2020 - Il Cornicione</em></div>
+    </b>
   </footer>
-
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>
